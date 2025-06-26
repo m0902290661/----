@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+img{
+    height: 300px;
+    border-radius: 15px;
+}
+
+a:hover {
+    animation: a1 1s;
+    background-color: aquamarine;
+    color: black;
+}
+
+@keyframes a1 {
+    from {
+        background-color: auto;
+        color: white;
+    }
+
+    to {
+        background-color: aquamarine;
+        color: black;
+    }
+}
+
+@font-face {
+    font-family: 'cwfs';
+    src: url('https://cdn.jsdelivr.net/gh/l10n-tw/font-cwtex/cwfs.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'cwfs', serif;
+    padding: 5px;
+}

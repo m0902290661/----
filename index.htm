@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="cropped-logo-1.jpg">
+    <title>菩因禪寺</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border: 1px solid;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        a:hover{
+            animation: a1 1s;
+            background-color: aquamarine;
+            color: black;
+        }
+        .air-zone {
+            padding: 5px;
+        }
+
+        .air-zone-flex {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .air-zone-left {
+            width: 50%;
+        }
+
+        .air-zone-left iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+
+        .air-zone-right p {
+            text-align: left;
+        }
+
+        .air-zone-button {
+            font-size: 32px;
+        }
+        @font-face {
+            font-family: 'cwfs';
+            src: url('https://cdn.jsdelivr.net/gh/l10n-tw/font-cwtex/cwfs.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'cwfs', serif;
+            padding: 10px;
+        }
+
+        .header {
+            height: 800px;
+            background-image: url('F646D203-6E45-4305-96A1-BB35DAF12929_0.jpg');
+            background-size: cover;
+            padding: 15px;
+            background-position: center;
+        }
+
+        .header1 {
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header1 h1 {
+            text-align: center;
+            letter-spacing: 5px;
+            background-color: white;
+            width: 300px;
+        }
+
+        .header1 img {
+            height: 28px;
+            border-radius: 15px;
+        }
+
+        .menu a {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .menu a:hover {
+            background-color: aquamarine;
+            color: black;
+            animation: a1 0.5s;
+        }
+
+        @keyframes a1 {
+            from {
+                background-color: auto;
+                color: white;
+            }
+
+            to {
+                background-color: aquamarine;
+                color: black;
+            }
+        }
+
+        @keyframes a2 {
+            from {
+                background: linear-gradient(45deg, #667eea, #764ba2);
+            }
+
+            to {
+                background: linear-gradient(45deg, #764ba2, #667eea);
+            }
+        }
+
+        .menu {
+            text-align: right;
+        }
+
+        .menu details summary {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            padding: 5px;
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .menu details summary:hover {
+            background-color: aquamarine;
+            color: black;
+            animation: a1 0.5s;
+        }
+
+        .menu details[open] summary {
+            background-color: aquamarine;
+            color: black;
+        }
+
+        .body2 img {
+            height: 250px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+
+        .body2 {
+            padding: 5px;
+            background-color: bisque;
+        }
+
+        .body1 h2 {
+            color: white;
+            font-size: 0px;
+        }
+
+        .body1 p {
+            font-size: 50px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .body1 {
+            padding: 15px;
+            animation-name: a2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* 無限次重複 */
+        }
+
+        div {
+            margin-bottom: 5px;
+        }
+
+        .body2o1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .body2o1o1 {
+            width: 50%;
+        }
+
+
+        .body2o2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .body2o2o1 {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .air-zone-flex {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .air-zone-left {
+                width: 100%;
+            }
+
+            .air-zone-left iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            .air-zone-button {
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .body2o1,
+            .body2o2 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .body2o1o1,
+            .body2o2o1 {
+                width: 100%;
+            }
+
+            .body2o1o2 img,
+            .body2o2o2 img {
+                width: 100%;
+                height: auto;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .header1 h1 {
+                width: auto;
+            }
+
+            .body2 img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .body1 p {
+                font-size: 28px;
+            }
+        }
+
+        .b3:hover{
+            animation: a1 1s;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header1">
+            <h1><span><img src="cropped-logo-1.jpg" alt=""></span>菩因禪寺</h1>
+        </div>
+        <div class="menu">
+            <details>
+                <summary>選單</summary>
+                <div>
+                    <a href="#宗旨">宗旨</a>
+                    <a href="#簡介">簡介</a>
+                    <a href="#航空城專區">航空城專區</a>
+                    <a href="#上如下念法師簡介">上如下念法師簡介</a>
+                    <a href="#行事曆">行事曆</a>
+                    <a href="#地理位置">地理位置</a>
+                    <a href="#建寺上樑籌資活動">菩因禪寺 建寺上樑籌資活動</a>
+                    <a href="#菩因禪寺附設觀心學苑年度會員招生">菩因禪寺附設觀心學苑 年度會員招生</a>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <div id="宗旨" class="body1">
+        <h2>宗旨</h2>
+        <p>三學增上，<br>菩提為基，<br>淨化人心，<br>福祉社會</p>
+    </div>
+
+    <div id="簡介" class="body2">
+        <p>菩因禪寺</p>
+        <h2 style="font-size: 38px;">簡介</h2>
+        <div class="body2o1">
+            <div class="body2o1o1">
+                <p>桃園市大園區菩因禪寺原坐落在西濱公路旁(台15線)，面臨溪河，附近為田園景色，空氣清新，遠離塵囂，寧靜怡人。</p>
+                <p>1998年初秋，本寺開山住持上如下念法師，見故鄉大園民風淳樸，佛法衰敝眾生憂苦，乃發心弘揚佛法遍灑甘露法水，廣結善緣，滋潤這塊生於斯長於斯的土地。因緣際會，在大園市區一處百坪之辦公室，開始講經說法，並安置徒眾，名為「菩因講堂」。
+                </p>
+                <p>2001年春，三寶弟子李世揚、麥寬成有感於佛恩師恩，乃捐獻後厝村現址田舍作為道場，菩因講堂乃遷至現址，改名為「菩因禪寺」。期間，開山住持並將原農舍翻修為寺廟外觀，不但大雄寶殿莊嚴巍峨，且園林池閣環境優雅，前院百花齊放、鳥語花香，後山鹿野苑禪境幽遠，拾階而上出塵空寂，形成現今之寺貌。大雄寶殿主要供奉「西方三聖」(
+                    阿彌陀佛、觀世音菩薩與大勢至菩薩
+                    )，禪寺山門坐東朝西，代表本寺禪淨雙修，求生淨土。信徒們見之無不歡喜雀躍，乃共同發起組織「菩因學會」，不僅在人力物力上，給予濟助，更多方面協助本寺進行寺務推廣等工作。並於2002年7月完成寺廟登記。
+                </p>
+            </div>
+            <div class="body2o1o2">
+                <img src="2BBEF004-7998-4D68-B3D8-9D3DBEE61BE5_0.jpg" alt="">
+                <img src="2CA1C19F-16D1-4283-AA7F-2E006FA543C8_0.jpg" alt="">
+                <img src="659B4648-C098-4C3B-BC5F-130067D08E23_0.jpg" alt="">
+            </div>
+        </div>
+        <div class="body2o2">
+            <div class="body2o2o1">
+                <p>本寺以三學增上、菩提為基，淨化人心、福祉社會為宗旨，於春、秋二季有舉辦大法會，為眾生祈福並祈禱風調雨順、國泰民安、家家戶戶平安吉祥。每周帶領信眾共修及講經說法，平日落實於臨終關懐、身心輔導及協助弱勢團體等社會福利工作，走入家庭輔導身心，倡導人生樂觀進取、自利利他、諸惡莫作、眾善奉行等志願。
+                </p>
+                <p>「菩因禪寺」原址110年因政府興辦航空城徵收，暫時搬遷至和平里，新建禪寺目前興建中。</p>
+            </div>
+            <div class="body2o2o2">
+                <img src="19DA9E3A-1F92-4D24-B8D3-734C74573AE6_0.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="air-zone" id="航空城專區">
+        <h2>航空城專區</h2>
+        <div class="air-zone-flex">
+            <div class="air-zone-left">
+                <iframe
+                    src="https://boyintemple.com/wp-content/uploads/2024/08/D1AE788FEA9AD18030C1FE9D538095B46D227F53.mp4"
+                    frameborder="0" style="border-radius: 5px;"></iframe>
+            </div>
+            <div class="air-zone-right">
+                <p style="text-align: center;"><b>【菩因禪寺重建啟動｜因航空城徵收 我們重新歸零再出發】</b></p>
+                <p>應機場航空城的土地徵收，菩因禪寺不得不面對歸零的挑戰。這片承載無數修行足跡的土地，即將走入歷史，但佛法的弘揚不會停止，信願的力量更不會被動搖。</p>
+                <p>在如念長老尼的帶領下，我們發願重建菩因禪寺，讓這份法脈延續，讓這座信仰的燈塔重新矗立。這不只是一次搬遷，更是一次新的發願，一次重新啟程的契機。</p>
+                <p>重建的道路充滿挑戰，但我們相信，眾志成城，法脈不斷。在您的護持與發心下，菩因禪寺將在新的土地上再次綻放光明，成為更多人的心靈依靠。</p>
+                <p>菩因禪寺 #航空城徵收 #重新歸零 #發願重建 #法脈延續</p>
+            </div>
+        </div>
+        <div class="air-zone-right">
+            <a title="點擊查看"  class="b3 air-zone-button" target="_blank" href="https://boyintemple.com/%E6%86%B6%E8%BC%89%E8%88%AA%E7%A9%BA%E5%9F%8E.pdf">憶載航空城</a>
+            <p>點擊上方按鈕查看</p>
+        </div>
+    </div>
+    <div class="" style="text-align: center; background-color:burlywood;" id="上如下念法師簡介">
+        <h2 style="font-size: 32px; text-align: center;">認識 上如下念法師</h2>
+        <img src="65990_0.jpg" alt="" style="width: 45%;"><br><br>
+        <a href="index2.htm" style="margin-top: 5px; text-decoration: none;color: white;background-color: black;border-radius: 15px;padding: 15px;">深入暸解</a>
+    </div><br><br>
+    <div style="text-align: center;background-color: pink;padding: 15px;" id="行事曆">
+        <img src="S__44319572.jpg" alt="" style="width: 80%;">
+        <h2 style="font-size: 32px;letter-spacing: 15px;">行事曆</h2>
+    </div>
+    <div style="text-align: center;background-color:aquamarine;" id="地理位置">
+        <h2 style="font-size: 32px;letter-spacing: 5px;">地理位置</h2>
+        <img style="height: 250px;border-radius: 15px;box-shadow: 1px 1px 1px 1px ;" src="BE473829-2E14-4A47-AA05-C4481D15C711_0-2048x1536.jpg" alt="">
+        <p>地址：桃園市大園區平南一路785巷42號</p>
+        <a target="_blank" href="https://www.google.com/maps/place/%E8%8F%A9%E5%9B%A0%E7%A6%AA%E5%AF%BA/data=!4m2!3m1!1s0x0:0x3a9805f4e8f187e4?sa=X&ved=1t:2428&ictx=111&cshid=1735888596706290" style="border: 1px solid;text-decoration: none;">GOOGLE MAP</a>
+    </div>
+    <div style="text-align: center;" id="建寺上樑籌資活動">
+        <h2>菩因禪寺<br><span style="font-size: 12px;">建寺 上樑  籌資 活動</span></h2>
+        <p>邀您護持  莊嚴三寶殿堂</p>
+        <a  href="index3.htm">了解詳情</a><br><br>
+        <img src="2CA1C19F-16D1-4283-AA7F-2E006FA543C8_0-3-scaled.jpg" style="width: 50%;border-radius: 15px;" alt="">
+    </div>
+    <div style="text-align: center;" id="菩因禪寺附設觀心學苑年度會員招生">
+        <h2>菩因禪寺附設觀心學苑 <br><span style="font-size: 12px;">年度會員招生</span></h2>
+        <a href="index4.htm">深入瞭解</a><br><br>
+        <img src="472831056_2456887781321587_3097471375333042121_n.jpg" alt="" style="width: 50%;border-radius: 15px;">
+    </div>
+
+    <div>
+        <p style="text-align: center;">&copy;boyintemple. by Hsu Yuanwei</p>
+    </div>
+</body>
+
+</html>
